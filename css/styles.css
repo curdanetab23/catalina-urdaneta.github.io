@@ -141,10 +141,29 @@ ul {
 
 .hero-content {
     z-index: 2;
+    width: 100%;
+    /* Now takes full width of container to hold both items */
+    position: relative;
+    /* Anchor for absolute video */
+    display: flex;
+    /* Allow flex column for logic */
+    flex-direction: column;
+    align-items: flex-start;
+    /* Default left align */
+}
+
+/* Adjust text wrapper to maintain split layout */
+.hero-content>h1,
+.hero-content>h2,
+.hero-content>p,
+.hero-content>.cta-buttons {
     width: 50%;
+    /* Restrict text width as before */
     padding-right: 50px;
 }
 
+/* Adjust text wrapper if needed, or target children */
+/* Restored Text Styles */
 .hero-content h1 {
     font-size: 5rem;
     line-height: 0.9;
@@ -185,18 +204,19 @@ ul {
 
 .video-container {
     position: absolute;
-    right: 5%;
+    right: 0;
+    /* Align to right of hero-content */
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
     height: 60%;
     z-index: 2;
     border-radius: 20px;
-    /* Gradient Border Trick */
     padding: 3px;
     background: var(--main-gradient);
     box-shadow: -20px 20px 0px rgba(255, 255, 255, 0.05);
-    /* Softer shadow */
+    /* Reset margins for desktop */
+    margin: 0;
 }
 
 .video-placeholder {
@@ -556,6 +576,8 @@ ul {
     width: 100%;
     overflow: visible;
     /* Let slides peek */
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-track {
@@ -932,18 +954,56 @@ ul {
     }
 }
 
-/* Responsive */
+
+/* Comprehensive Mobile Responsiveness */
 @media (max-width: 900px) {
+
+    /* Global Section Padding */
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    /* Navbar */
+    #navbar .container {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    /* Hero */
     .hero-content {
         width: 100%;
-        padding: 0;
         text-align: center;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center children horizontally */
+        padding-top: 100px;
+        /* Force space from top to clear navbar */
     }
 
-    .hero-bg-shape {
-        display: none;
+    .hero-content h1 {
+        font-size: 3rem;
+        order: 1;
+        /* Name first */
+        margin-bottom: 30px;
+        width: 100%;
+        /* Reset desktop width */
     }
 
+    /* Video now comes second */
     .video-container {
         position: relative;
         width: 100%;
@@ -951,64 +1011,213 @@ ul {
         right: auto;
         top: auto;
         transform: none;
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        order: 2;
     }
 
-    .hero-content h1 {
-        font-size: 3rem;
+    /* Order the rest of the elements after the video */
+    .hero-content h2 {
+        order: 3;
+        width: 100%;
+        /* Reset desktop width */
     }
 
+    .hero-content p {
+        order: 4;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /* Reset desktop width */
+    }
+
+    .cta-buttons {
+        order: 5;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        /* Reset desktop width */
+    }
+
+    .cta-buttons .btn {
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* Optional: slightly reduce side padding if text is wrapping too much */
+        padding: 15px 30px;
+    }
+
+    .hero-bg-shape {
+        width: 100%;
+        height: 50%;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        clip-path: none;
+        transform: skewY(-10deg);
+        z-index: -1;
+    }
+
+    /* About & Stats */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .stat-card {
+        padding: 30px;
+    }
+
+    /* Timeline - Stacked Left */
     .timeline {
+        padding-left: 20px;
         margin: 0;
-        padding-left: 30px;
     }
 
     .timeline::after {
-        left: 0;
+        left: 20px;
     }
 
     .timeline-item {
         width: 100%;
-        padding-left: 30px;
+        padding-left: 45px;
         padding-right: 0;
         margin-left: 0;
+        margin-bottom: 40px;
+        justify-content: flex-start;
     }
 
     .timeline-item:nth-child(even) {
         margin-left: 0;
+        padding-left: 45px;
+        justify-content: flex-start;
     }
 
     .timeline-dot {
-        left: -39px !important;
+        left: 11px !important;
+        right: auto;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 11px !important;
     }
 
+    .timeline-content {
+        width: 100%;
+    }
+
+    /* Skills - Centered Card */
+    .skills-centered .skill-category {
+        width: 100% !important;
+    }
+
+    /* Contact Section */
     .contact-split-layout {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 50px;
+    }
+
+    .contact-left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .giant-text .line-1,
     .giant-text .line-2,
     .giant-text .line-3 {
-        font-size: 4rem;
-        /* Smaller on mobile */
+        font-size: 3.5rem;
+        /* Resize for mobile */
+        letter-spacing: -1px;
     }
 
     .geometric-shape {
-        width: 100px;
-        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+
+    .contact-right {
+        padding-top: 0;
     }
 
     .form-row {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
     }
 
     .form-group.half {
         width: 100%;
+    }
+
+    /* Carousel Fixes */
+    .carousel-container {
+        padding-bottom: 80px;
+        /* Space for buttons */
+    }
+
+    .carousel-track-container {
+        display: flex;
+        justify-content: center;
+        /* Force center the wide track so Item 2 (Active) is in view */
+        width: 100%;
+        overflow: visible;
+    }
+
+    .carousel-track {
+        margin: 0;
+        /* Let flex parent handle alignment */
+    }
+
+    .carousel-btn {
+        top: auto;
+        bottom: 10px;
+        transform: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .prev-btn {
+        left: 35%;
+    }
+
+    .next-btn {
+        right: 35%;
+    }
+
+    .carousel-slide {
+        /* Ensure card fits well */
+        flex: 0 0 280px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .giant-text .line-1,
+    .giant-text .line-2,
+    .giant-text .line-3 {
+        font-size: 2.5rem;
+    }
+
+    .prev-btn {
+        left: 30%;
+    }
+
+    .next-btn {
+        right: 30%;
+    }
+
+    .carousel-slide {
+        flex: 0 0 260px;
     }
 }
