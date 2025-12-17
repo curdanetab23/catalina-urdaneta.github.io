@@ -1001,6 +1001,8 @@ ul {
         margin-bottom: 30px;
         width: 100%;
         /* Reset desktop width */
+        padding: 0;
+        /* Reset desktop padding */
     }
 
     /* Video now comes second */
@@ -1021,6 +1023,8 @@ ul {
         order: 3;
         width: 100%;
         /* Reset desktop width */
+        padding: 0;
+        /* Reset desktop padding */
     }
 
     .hero-content p {
@@ -1029,6 +1033,9 @@ ul {
         margin-right: auto;
         width: 100%;
         /* Reset desktop width */
+        text-align: center !important;
+        padding: 0;
+        /* Reset desktop padding */
     }
 
     .cta-buttons {
@@ -1037,6 +1044,8 @@ ul {
         margin-top: 20px;
         width: 100%;
         /* Reset desktop width */
+        padding: 0;
+        /* Reset desktop padding */
     }
 
     .cta-buttons .btn {
