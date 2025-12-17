@@ -1038,7 +1038,7 @@ ul {
         /* Reset desktop padding */
     }
 
-    .cta-buttons {
+    .hero-content .cta-buttons {
         order: 5;
         justify-content: center;
         margin-top: 20px;
