@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBIK AI Background</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 820px;
+            height: 312px;
+            overflow: hidden;
+            background-color: #0D1F2D;
+            /* Dark Navy Base */
+            font-family: 'Outfit', sans-serif;
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: linear-gradient(135deg, #0d1f2d 0%, #1a2f40 100%);
+        }
+
+        /* --- Original Structure Preserved --- */
+
+        /* Large triangulated areas */
+        .tri-1 {
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-left: 300px solid transparent;
+            border-right: 0 solid transparent;
+            border-bottom: 312px solid #4A6fac;
+            bottom: 0;
+            right: 0;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .tri-2 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 0 solid transparent;
+            border-right: 500px solid transparent;
+            border-top: 312px solid #0D1F2D;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .tri-3 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 400px solid rgba(0, 212, 255, 0.15);
+            top: -100px;
+            left: 30%;
+            transform: rotate(45deg);
+            z-index: 1;
+        }
+
+        .tri-4 {
+            position: absolute;
+            top: -50px;
+            right: 150px;
+            width: 200px;
+            height: 400px;
+            background: linear-gradient(to bottom, transparent, #00D4FF);
+            transform: rotate(25deg);
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        /* Lines for "Tech" feel */
+        .line {
+            position: absolute;
+            background-color: #00D4FF;
+            box-shadow: 0 0 8px #00D4FF;
+            opacity: 0.6;
+            z-index: 2;
+        }
+
+        .line-1 {
+            top: 50px;
+            left: 0;
+            width: 300px;
+            height: 2px;
+            transform: rotate(15deg);
+        }
+
+        .line-2 {
+            bottom: 40px;
+            right: 0;
+            width: 400px;
+            height: 1px;
+            transform: rotate(-5deg);
+        }
+
+        /* Glass Shards - Enhanced for "Cubism" Texturing */
+        .shard {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        .shard-1 {
+            top: 20%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            transform: translate(-50%, 0);
+        }
+
+        .shard-2 {
+            top: 40%;
+            left: 60%;
+            width: 150px;
+            height: 200px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            background: rgba(74, 111, 172, 0.2);
+            transform: rotate(-10deg);
+        }
+
+        /* Additional Cubist Fragments */
+        .shard-3 {
+            top: 10%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.02);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            transform: rotate(15deg);
+        }
+
+        /* --- Text Content --- */
+        .content-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+            /* Left align text */
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(90deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .slogan-box {
+            margin-top: 15px;
+            max-width: 500px;
+            background: rgba(13, 31, 45, 0.6);
+            /* Semi-transparent backing for legibility */
+            padding: 15px;
+            border-left: 2px solid #00D4FF;
+            backdrop-filter: blur(4px);
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p.slogan {
+            font-size: 1.1rem;
+            margin: 0;
+            line-height: 1.4;
+            color: #e2e8f0;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: #00D4FF;
+            font-weight: 500;
+        }
+
+        /* Watermark-like large logo shape */
+        .watermark-circle {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            top: -100px;
+            left: -100px;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Geometry (Original Structure) -->
+        <div class="watermark-circle"></div>
+        <div class="tri-1"></div>
+        <div class="tri-2"></div> <!-- Re-added for layering -->
+        <div class="tri-3"></div>
+        <div class="tri-4"></div>
+
+        <!-- Tech Lines -->
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+
+        <!-- Glass Shards -->
+        <div class="shard shard-1"></div>
+        <div class="shard shard-2"></div>
+        <div class="shard shard-3"></div>
+
+        <!-- Text Overlay -->
+        <div class="content-layer">
+            <h1>CUBIK AI</h1>
+            <div class="slogan-box">
+                <p class="slogan">
+                    <span class="highlight">Automatización y Marketing</span> Inteligente.
+                    Asistencia Integral y Multiservicios con <span class="highlight">IA</span> para Potenciar tu
+                    Empresa.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
