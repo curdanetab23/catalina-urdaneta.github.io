@@ -1,443 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalina Urdaneta Bernal | Data Scientist & Automation Engineer</title>
+    <title>CUBIK AI - Consultoría en Inteligencia Artificial</title>
+    <meta name="description"
+        content="Transforma tu negocio con Inteligencia Artificial. Automatización inteligente, análisis predictivo y optimización de procesos.">
+
+    <!-- Fonts & Icons -->
+    <link rel="icon" type="image/png" href="assets/images/logo_color 3.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Placeholder for FontAwesome, might need a real kit or SVG icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header id="navbar">
-        <div class="container">
-            <div class="logo">CUB LABS</div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+
+    <!-- Artistic Background (Cubism) -->
+    <!-- Artistic Background (Image Based) -->
+    <div class="background-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="logo_color 3.png" alt="CUBIK AI">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Acerca de Mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact" class="btn-highlight">Consulta Gratis</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="hero">
-        <div class="hero-bg-shape"></div>
-        <div class="container" style="display:flex; align-items:center; width: 100%; height: 100%;">
-            <div class="hero-content">
-                <h1>Catalina <span>Urdaneta Bernal</span></h1>
-
-                <!-- Video inserted here for mobile ordering control -->
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <span>Presentation Video</span>
-                    </div>
-                </div>
-
-                <h2>Data Scientist & Automation Engineer</h2>
-                <p style="text-align: justify;">I build automated data systems that scale, scrape, enrich and deliver
-                    real business value.</p>
-                <p class="hero-tagline"
-                    style="color: #fff; font-size: 1.3rem; margin-top: -20px; font-weight: 500; font-style: italic;">
-                    Senior Data Scientist & Automation Engineer specialized in large-scale data pipelines, web
-                    intelligence, enrichment systems and ML-driven workflows.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Work</a>
-                </div>
             </div>
-            <!-- Old Video Container Removed from here -->
-        </div>
+        </nav>
+        <div class="container hero-content">
+            <h1>Lleva la IA a tu empresa <br><span>con impacto medible</span></h1>
+            <p>Implementamos automatización inteligente, analítica predictiva y asistentes GenAI adaptados a tu
+                operación para ahorrar tiempo, reducir costos y tomar mejores decisiones.</p>
+            <a href="#contact" class="btn-primary">Empieza Ahora</a>
+            <div class="logo-container">
+                <div class="idea-bubble i1"></div>
+                <div class="idea-bubble i2"></div>
+                <div class="idea-bubble i3"></div>
+                <img src="assets/images/logo_color 3.png" alt="CUBIK AI Logo" class="hero-logo">
+            </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- Metrics Section -->
+    <section class="metrics">
         <div class="container">
-            <h2 class="section-title">Expertise Overview</h2>
-            <div class="about-grid">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">+50</span>
+                    <span class="metric-label">Proyectos Completados</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">98%</span>
+                    <span class="metric-label">Satisfacción Cliente</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">40%</span>
+                    <span class="metric-label">Reducción de Costos</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">24/7</span>
+                    <span class="metric-label">Soporte Técnico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <div class="about-container">
+                <div class="about-image-placeholder">
+                    <img src="assets/images/me.jpg" alt="Catalina Urdaneta">
+                </div>
                 <div class="about-text">
-                    <p class="hero-tagline"
-                        style="color: #fff; font-size: 1.3rem; margin-top: -20px; font-weight: 500; font-style: italic;text-align: justify;">
-                        Senior Data Scientist & Automation Engineer with 9+ years of experience building and operating
-                        production-grade data systems.
+                    <p>Soy <strong>Catalina Urdaneta</strong> ingeniera y consultora especializada en <span
+                            class="about-highlight">IA y automatización.</span>.</p>
+                    <p>Con <span class="about-highlight">+11 años de experiencia</span> en la industria del
+                        desarrollo de software y datos , y durante los últimos <span class="about-highlight">5
+                            años</span> enfocada en IA, diseño soluciones end-to-end que convierten operaciones manuales
+                        en sistemas inteligentes: desde modelos predictivos hasta <span class="about-highlight">agentes
+                            y asistentes con GenAI</span>integrados a procesos de negocio.</p>
+                    <p>Mi misión es que empresas y emprendedores implementen IA de forma rentable, escalable y con
+                        impacto real. Con <strong class="about-highlight">CUBIK AI</strong>, quiero convertirme en el
+                        aliado tecnológico de empresas y
+                        emprendedores que buscan crecer con tecnología real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot service-icon"></i>
+                    <h3 class="service-title">Automatización Inteligente</h3>
+                    <p>Implementación de bots y sistemas autónomos para reducir tareas repetitivas y errores humanos.
                     </p>
-                    <br>
-                    <p style="text-align: justify;">I design and implement end-to-end pipelines that automate data
-                        acquisition, large-scale web scraping, enrichment workflows, and machine learning systems used
-                        in real business environments.</p>
-                    <p style="text-align: justify;">With a background in Electronic Engineering and deep expertise in
-                        Python, SQL, cloud platforms, and LLM-based agents, I focus on solving complex, unstructured
-                        data problems where reliability, scale, and automation actually matter.</p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3>9+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>40%</h3>
-                        <p>Workflow Efficiency Improvement</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100+</h3>
-                        <p>Projects Delivered</p>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3 class="service-title">Análisis Predictivo</h3>
+                    <p>Modelos de Machine Learning que anticipan tendencias de mercado y comportamiento de usuarios.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section dark-bg">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> AI SYSTEMS & ARCHITECTURE</h3>
-                    <ul>
-                        <li>LLM-powered agents (RAG, tool calling, orchestration)</li>
-                        <li>Multi-source data ingestion & enrichment pipelines</li>
-                        <li>Vector databases & semantic search</li>
-                        <li>Production-ready AI workflows</li>
-                    </ul>
+                <div class="service-card">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h3 class="service-title">Optimización de Procesos</h3>
+                    <p>Auditoría y mejora de flujos de trabajo existentes mediante herramientas de IA personalizadas.
+                    </p>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> DATA ACQUISITION & WEB INTELLIGENCE</h3>
-                    <ul>
-                        <li>Large-scale web scraping & crawling</li>
-                        <li>Anti-bot strategies & resilient scrapers</li>
-                        <li>Data normalization & entity resolution</li>
-                        <li>Email & contact enrichment pipelines</li>
-                    </ul>
+                <div class="service-card">
+                    <i class="fas fa-brain service-icon"></i>
+                    <h3 class="service-title">Consultoría Estratégica</h3>
+                    <p>Roadmap digital para la transformación de tu empresa hacia una cultura orientada a datos.</p>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> AUTOMATION & DATA OPS</h3>
-                    <ul>
-                        <li>ETL Pipelines</li>
-                        <li>Workflow orchestration (Airflow)</li>
-                        <li>Data validation & monitoring</li>
-                        <li>Fail-safe & recovery strategies</li>
-                        <li>Scalable & maintainable infrastructure</li>
-                    </ul>
+                <div class="service-card">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h3 class="service-title">Scraping de Marketing</h3>
+                    <p>Extracción estratégica de datos de competencia y tendencias para campañas de alto impacto.</p>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <ul>
-                        <li>Python, JavaScript</li>
-                        <li>SQL, Dash, Flask</li>
-                        <li>FastAPI, LangChain</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Data Science & AI</h3>
-                    <ul>
-                        <li>Machine Learning, Deep Learning</li>
-                        <li>TensorFlow, Scikit-learn</li>
-                        <li>NLP, RAGs, LLM Agents</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Tech</h3>
-                    <ul>
-                        <li>AWS, PostgreSQL</li>
-                        <li>Power BI, Domo</li>
-                        <li>Git, CI/CD, Linux</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="skills-centered" style="margin-top: 40px; display: flex; justify-content: center;">
-                <div class="skill-category" style="max-width: 800px; width: 100%;">
-                    <h3><i class="fas fa-project-diagram"></i> How I apply AI in real systems</h3>
-                    <ul>
-                        <li>Automating data extraction, classification, and enrichment</li>
-                        <li>Building LLM agents connected to live data sources</li>
-                        <li>Reducing manual operations through AI-driven workflows</li>
-                        <li>Designing systems where AI decisions are traceable and reliable</li>
-                    </ul>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3 class="service-title">Diseño de Páginas Web</h3>
+                    <p>Creación de sitios modernos, optimizados y enfocados en la conversión y experiencia de usuario.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section">
+    <!-- Specialized Services -->
+    <section class="specialized-services">
         <div class="container">
-            <h2 class="section-title">Professional Journey</h2>
+            <h2>Especialidades Avanzadas</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-coins service-icon"></i>
+                    <h3 class="service-title">Optimización de ROI</h3>
+                    <p>Maximiza el retorno de inversión analizando fugas de capital y oportunidades ocultas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3 class="service-title">Seguridad con IA</h3>
+                    <p>Detección de fraudes y amenazas cibernéticas en tiempo real con algoritmos avanzados.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database service-icon"></i>
+                    <h3 class="service-title">Big Data & Scraping</h3>
+                    <p>Recolección y procesamiento masivo de datos para inteligencia de negocios competitiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section id="process">
+        <div class="container">
+            <h2>Nuestro Proceso de Trabajo</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content timeline-card">
-                        <h4 class="role">Data Operations Manager</h4>
-                        <p class="meta">vLex International · 09/2023 – 10/2025</p>
-
-                        <ul class="impact">
-                            <li>Built Python scraping + enrichment pipelines for global legal/business data.</li>
-                            <li>Developed LLM agents + RAG + custom search engines for classification & retrieval.</li>
-                            <li><strong>+30%</strong> sync speed · <strong>+20%</strong> data accuracy ·
-                                <strong>-40%</strong> manual workload.
-                            </li>
-                        </ul>
+                    <div class="timeline-content">
+                        <i class="fas fa-clipboard-check timeline-icon"></i>
+                        <h3>1. Diagnóstico</h3>
+                        <p>Analizamos la infraestructura actual y definimos los objetivos clave de tu negocio.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content timeline-card">
-                        <h4 class="role">Data Science Manager</h4>
-                        <p class="meta">Schlumberger · 10/2021 – 06/2023</p>
-
-                        <ul class="impact">
-                            <li>Designed and deployed ML systems (prediction/classification/clustering) with end-to-end
-                                MLOps workflows in Python.</li>
-                            <li>Delivered a <strong>40%</strong> application load-time reduction through optimization,
-                                caching, and modular architecture.</li>
-                            <li>Awarded Global Innovation Award (2nd place) for “History Matching Optimization”.</li>
-                        </ul>
+                    <div class="timeline-content">
+                        <i class="fas fa-chess-knight timeline-icon"></i>
+                        <h3>2. Estrategia</h3>
+                        <p>Diseñamos un plan de implementación a medida, seleccionando las mejores tecnologías.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content timeline-card">
-                        <h4 class="role">RPA/RDA Developer</h4>
-                        <p class="meta">Tata Group · 01/2020 – 10/2021</p>
-
-                        <ul class="impact">
-                            <li>Built end-to-end RPA solutions with Pega Robotics for banking operations; standardized
-                                workflows and mentored developers.</li>
-                            <li>Created a reusable GitHub code library, cutting development time by <strong>25%</strong>
-                                and reducing QA cycles by <strong>30%</strong> with improved testing/deployment.</li>
-                            <li>Maintained <strong>90%+</strong> code quality and zero critical production defects.</li>
-                        </ul>
+                    <div class="timeline-content">
+                        <i class="fas fa-code timeline-icon"></i>
+                        <h3>3. Desarrollo</h3>
+                        <p>Implementamos las soluciones de IA, entrenamos modelos y configuramos automatizaciones.</p>
                     </div>
                 </div>
-                <!-- Collapsed earlier experience for minimalism, can be expanded -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content timeline-card">
-                        <h4 class="role">Senior Business Analyst</h4>
-                        <p class="meta">Global Hits / Claro Colombia · 04/2019 – 12/2019</p>
-
-                        <ul class="impact">
-                            <li>Analyzed large-scale network/customer data (Python/R/Linux) and built internal
-                                automation tools in JavaScript for QA and monitoring.</li>
-                            <li>Managed Oracle databases and ETL pipelines for reporting integrity.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Collapsible Others Section -->
-                <div class="timeline-toggle-container">
-                    <button id="toggle-others" class="btn-timeline-toggle">
-                        Show Older Experience <i class="fas fa-chevron-down"></i>
-                    </button>
-                </div>
-
-                <div id="others-timeline" class="timeline-hidden">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Developer Engineer</h4>
-                            <p class="meta">Ascendi · 08/2018 – 01/2019</p>
-                            <ul class="impact">
-                                <li>Developed and programmed microcontroller systems (PSBs and ADMs) for crane control.
-                                </li>
-                                <li>Optimized automation reliability and operational safety in construction.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Full-time Professor</h4>
-                            <p class="meta">INCCA University · 08/2018 – 01/2019</p>
-                            <ul class="impact">
-                                <li>Taught Computational Intelligence, Databases, and OOP courses.</li>
-                                <li>Mentored engineering students and led applied research projects in systems design.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Technical Support Engineer</h4>
-                            <p class="meta">Medetech SAS · 08/2017 – 08/2018</p>
-                            <ul class="impact">
-                                <li>Provided technical support and training for Philips/Sonoscape medical equipment.
-                                </li>
-                                <li>Conducted research on telemedicine systems and translated technical documentation.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Projects Assistant Engineer</h4>
-                            <p class="meta">Proindustrial de Básculas SAS · 09/2014 – 05/2017</p>
-                            <ul class="impact">
-                                <li>Planned and supervised production/assembly of industrial weighing systems.</li>
-                                <li>Ensured calibration accuracy and operational efficiency across installations.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Technical Software Operator</h4>
-                            <p class="meta">Xion Automatización · 01/2014 – 06/2014</p>
-                            <ul class="impact">
-                                <li>Maintained and developed PLC-based industrial control software.</li>
-                                <li>Implemented API modules for machine interfaces and performed electronic diagnostics.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content timeline-card">
-                            <h4 class="role">Full Stack Developer</h4>
-                            <p class="meta">Digitax · 02/2013 – 12/2013</p>
-                            <ul class="impact">
-                                <li>Developed Android and iOS mobile applications in Java and C#.</li>
-                                <li>Optimized app performance and ensured backend integration via JSON/Databases.</li>
-                            </ul>
-                        </div>
+                    <div class="timeline-content">
+                        <i class="fas fa-rocket timeline-icon"></i>
+                        <h3>4. Optimización</h3>
+                        <p>Monitoreo continuo y ajustes para asegurar el máximo rendimiento y escalabilidad.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section dark-bg">
+    <!-- CTA & Contact -->
+    <section id="contact" class="cta-section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-placeholder-sm" style="background-color: #2a2a2a;">Video 1</div>
-                                <div class="project-info">
-                                    <h3>LLM Legal Agent</h3>
-                                    <p>AI-powered agent for legal data.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-placeholder-sm" style="background-color: #2a2a2a;">Video 2</div>
-                                <div class="project-info">
-                                    <h3>History Matching</h3>
-                                    <p>ML initiative for Schlumberger.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-placeholder-sm" style="background-color: #2a2a2a;">Video 3</div>
-                                <div class="project-info">
-                                    <h3>Banking RPA</h3>
-                                    <p>Banking operations automation.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-placeholder-sm" style="background-color: #2a2a2a;">Video 4</div>
-                                <div class="project-info">
-                                    <h3>Churn Prediction</h3>
-                                    <p>Marketing conversion tracking.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-placeholder-sm" style="background-color: #2a2a2a;">Video 5</div>
-                                <div class="project-info">
-                                    <h3>ETL Pipelines</h3>
-                                    <p>Large-scale data validation.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="carousel-nav">
-                <button class="carousel-indicator current-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
+            <h2>¿Listo para transformar tu negocio?</h2>
+            <p>Conecta con Nuestro Equipo. Cuéntanos sobre tu proyecto y descubre cómo podemos ayudarte a implementar
+                IA.</p>
+            <br>
+            <div class="about-container" style="max-width: 600px; margin: 0 auto; display: block;">
+                <!-- Simple Form Placeholder -->
+                <form style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                    <input type="text" placeholder="Nombre"
+                        style="padding: 1rem; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;">
+                    <input type="email" placeholder="Email"
+                        style="padding: 1rem; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;">
+                    <textarea placeholder="Cuéntanos tu idea..." rows="4"
+                        style="padding: 1rem; border-radius: 8px; border: none; background: rgba(255,255,255,0.1); color: white;"></textarea>
+                    <button type="submit" class="btn-primary"
+                        style="margin-top: 1rem; border: none; cursor: pointer;">Agendar Consulta Gratuita</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact-section-3d">
-        <div class="container">
-            <div class="contact-split-layout" id="contactWithTilt">
-                <div class="contact-left">
-                    <div class="giant-text">
-                        <span class="line-1">LET'S</span>
-                        <span class="line-2">GET IN</span>
-                        <span class="line-3">TOUCH</span>
-                    </div>
-                    <div class="geometric-shape">
-                        <div class="circle-part"></div>
-                    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section branding">
+                <div class="footer-logo">
+                    <img src="assets/images/logo_color 3.png" alt="CUBIK AI Logo">
+                    <span>CUBIK AI</span>
                 </div>
-                <div class="contact-right">
-                    <form class="minimal-form" onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
-                        <div class="form-group">
-                            <label>FULL NAME</label>
-                            <input type="text" required placeholder=" ">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <label>EMAIL</label>
-                                <input type="email" required placeholder=" ">
-                            </div>
-                            <div class="form-group half">
-                                <label>PHONE</label>
-                                <input type="tel" placeholder=" ">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>MESSAGE</label>
-                            <textarea rows="1" required placeholder=" "></textarea>
-                        </div>
-
-                        <div class="form-footer">
-                            <div class="footer-details">
-                                <span class="footer-label">LOCATION</span>
-                                <p>Bogotá, DC<br>Colombia</p>
-                                <p class="footer-small">+57 3194641751</p>
-                            </div>
-                            <button type="submit" class="submit-arrow-btn">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </form>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61586280305625" target="_blank"
+                        class="social-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cubik_ai/" target="_blank" class="social-btn"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-btn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section services">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#services">Consultoría Estratégica</a></li>
+                    <li><a href="#services">Optimización de Procesos</a></li>
+                    <li><a href="#services">IA & Chatbots</a></li>
+                    <li><a href="#services">Análisis Predictivo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contacto</h4>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+57 311 880 7824</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bogotá, Colombia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Lun - Sáb: 8:00 AM - 5:00 PM</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; © 2026 Catalina Urdaneta — Independent Contractor</p>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 CUBIK AI. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/573118807824" class="floating-whatsapp" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
