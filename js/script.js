@@ -3,10 +3,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close mobile menu if open
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('nav-links');
+            if (navToggle.classList.contains('active')) {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
         });
+    });
+
+    // Mobile Menu Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
 
     // Intersection Observer for Fade In visuals
@@ -25,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Select elements to animate
     const animatedElements = document.querySelectorAll('.service-card, .metric-card, .about-text, .timeline-item');
-    
+
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
