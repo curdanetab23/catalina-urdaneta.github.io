@@ -85,7 +85,7 @@ section {
     height: 100%;
     z-index: 0;
     /* Dark overlay + Image */
-    background: linear-gradient(rgba(5, 10, 16, 0.9), rgba(5, 10, 16, 0.8)), url('assets/images/background.jpg');
+    background: linear-gradient(rgba(5, 10, 16, 0.9), rgba(5, 10, 16, 0.8)), url('catalina-urdaneta.github.io/assets/images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -711,3 +711,4 @@ section {
         left: 0;
     }
 }
+
